@@ -1,0 +1,31 @@
+<h4>Welcome to Server Manager 4.0</h4>
+<p>Manage your Servers and Users.</p>
+<button class="btn btn-danger" (click)="onLoadServers()">Load server 1</button>
+<br />
+<button class="btn btn-success" (click)="onLogin()">
+  Log-in to access servers children
+</button>
+<button class="btn btn-warning" (click)="onLogout()">Log-out</button>
+<br />
+<button class="btn btn-default" (click)="onSetUsername()">
+  Set username to access users
+</button>
+<button class="btn btn-info" (click)="onClearUsername()">Clear username</button>
+<hr />
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active">
+    <a [routerLink]="['/servers', 1]" routerLinkActive="active"
+      >Load server 1</a
+    >
+  </li>
+  <li role="presentation">
+    <a [routerLink]="['/servers', 2]" routerLinkActive="active"
+      >Load server 2</a
+    >
+  </li>
+  <li role="presentation">
+    <a [routerLink]="['/servers', 3]" routerLinkActive="active"
+      >Load server 3</a
+    >
+  </li>
+</ul>
